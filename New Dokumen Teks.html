@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Berat Maggot</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: black;
+      color: white; /* Warna teks menjadi putih agar terlihat di latar belakang hitam */
+      font-size: 20px; /* Ukuran font lebih besar */
+    }
+    #calculator {
+      width: 600px; /* 20 kali lebih lebar dari 30px */
+      height: 600px; /* tinggi juga dibesarkan, sesuaikan sesuai kebutuhan */
+      margin: 50px auto; /* Margin atas dan bawah agar ada jarak dari tepi atas dan bawah */
+      padding: 40px;  /* Padding lebih besar */
+      border: 2px solid #ccc; /* Border lebih tebal */
+      border-radius: 10px; /* Border radius lebih besar */
+      box-sizing: border-box; /* Agar padding dan border tidak menambah ukuran total elemen */
+
+    }
+    label {
+        display: block; /* Label di baris sendiri */
+        margin-bottom: 10px;
+    }
+    input[type="number"], input[type="text"] {
+      font-size: 20px;
+      padding: 10px;
+      width: calc(100% - 22px); /* Mengisi lebar kalkulator dikurangi padding dan border */
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="calculator">
+    <h2>Kalkulator Berat Maggot</h2>
+    <label for="ratio">Rasio Panjang/Lebar:</label>
+    <input type="number" id="ratio" step="0.1" min="0"><br><br>
+
+    <label for="usia">Usia Maggot (hari):</label>
+    <input type="number" id="usia" min="0"><br><br>
+
+    <button onclick="hitungBerat()">Hitung Berat</button><br><br>
+
+    <label for="berat">Berat Maggot (gram):</label>
+    <input type="text" id="berat" readonly><br><br>
+  </div>
+
+  <script>
+    // ... (JavaScript code from previous example) ...
+  </script>
+</body>
+</html>
